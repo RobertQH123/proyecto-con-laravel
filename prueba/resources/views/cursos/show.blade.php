@@ -1,5 +1,7 @@
 @extends('layouts.plantilla')
-@section('title','show')
+@section('title','show'.$curso->name)
 @section('content')
-<h1>welcome to <?php echo $curso;?> </h1>
+<a href="{{route('cursos.edit', $curso->id)}}">editar</a>
+<h1>welcome to <?php echo $curso->name;?> </h1>
+<a href="{{route('cursos.index')}}">regresar</a>
 @endsection('content')
