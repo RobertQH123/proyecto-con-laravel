@@ -13,7 +13,7 @@ class CursoController extends Controller
         return view('cursos.index', compact('cursos'));
     }
     public function store(StoreCurso $request){
-        $curso = Curso::created($request->all());
+        $curso = Curso::create($request->all());
         return redirect()->route('cursos.show',$curso);
     }
     public function create(){
@@ -26,7 +26,12 @@ class CursoController extends Controller
     public function edit(Curso $curso){
         return view('cursos.edit',compact('curso'));
     }
-    public function update(StoreCurso $request,Curso $curso){
+    public function update(Request $request,Curso $curso){
+        $request->validate([
+            'name' => 'required',
+            'descripcion' => 'required',
+            'categoria' => 'required'  
+        ]);
         $curso->update($request->all());
         return redirect()->route('cursos.show',$curso);
     }
