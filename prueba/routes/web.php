@@ -23,10 +23,11 @@ Route::get('cursos/create', [CursoController::class,'create'])->name('cursos.cre
 
 Route::post('cursos',[CursoController::class,'store'])->name('cursos.store');
 
-Route::get('cursos/{id}', [CursoController::class,'show'])->name('cursos.show');
+Route::get('cursos/{curso}', [CursoController::class,'show'])->name('cursos.show');
 
-Route::get('cursos/{id}/edit', [CursoController::class,'edit'])->name('cursos.edit');
+Route::get('cursos/{curso}/edit', [CursoController::class,'edit'])->name('cursos.edit');
 
+Route::put('cursos/{curso}', [CursoController::class,'update'])->name('cursos.update');
 // Route::get('cursos/{curso}/{categoria?}', function ($curso,$categoria = null) {
 //     if($categoria){
 //         return view("welcome to : $curso de categoria $categoria");
