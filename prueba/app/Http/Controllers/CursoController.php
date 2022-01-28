@@ -13,12 +13,7 @@ class CursoController extends Controller
         return view('cursos.index', compact('cursos'));
     }
     public function store(StoreCurso $request){
-        $curso = new Curso();
-        $curso->name = $request->name;
-        $curso->descripcion = $request->descripcion;
-        $curso->categoria = $request->categoria;
-        $curso->save();
-        
+        $curso = Curso::created($request->all());
         return redirect()->route('cursos.show',$curso);
     }
     public function create(){
@@ -32,10 +27,7 @@ class CursoController extends Controller
         return view('cursos.edit',compact('curso'));
     }
     public function update(StoreCurso $request,Curso $curso){
-        $curso->name = $request->name;
-        $curso->descripcion = $request->descripcion;
-        $curso->categoria = $request->categoria;
-        $curso->save();
+        $curso->update($request->all());
         return redirect()->route('cursos.show',$curso);
     }
 }
