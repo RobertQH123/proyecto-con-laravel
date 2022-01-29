@@ -1,4 +1,4 @@
-# proyecto de laravel
+# Proyecto de Laravel
 
 ## Responsive
 
