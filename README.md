@@ -6,4 +6,4 @@
 
 ## CRUD
 
-[![CRUD.png](https://i.postimg.cc/vZXC9m5Q/CRUD.png)](https://postimg.cc/PCp6nT6c)
+[![CRUD-1.png](https://i.postimg.cc/bNN38rbJ/CRUD-1.png)](https://postimg.cc/rz3SN8fX)
