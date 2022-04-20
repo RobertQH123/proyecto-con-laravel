@@ -2,7 +2,7 @@
 
 ## Responsive
 
-[![responsive.png](https://i.postimg.cc/bJ61qxhX/responsive.png)](https://postimg.cc/MMQnDjHt)
+[![responsive-1.png](https://i.postimg.cc/MK48Ch4n/responsive-1.png)](https://postimg.cc/3dg6pb3h)
 
 ## CRUD
 
